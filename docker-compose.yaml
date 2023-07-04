@@ -1,0 +1,10 @@
+services:
+  react-admin-test:
+    container_name: react-admin-test
+    build:
+      context: ./
+    ports:
+      - '5173:5173'
+    volumes:
+      - ./src:/var/www/src
+    command: tail -f /dev/null
